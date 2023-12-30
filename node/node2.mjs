@@ -1,7 +1,8 @@
 // file.path.js
 
 /* ES모듈 방식 - 확장자 mjs */
-console.log(import.meta.url);
+import {fileURLToPath} from 'url'; // import : 변수의 다른 표현식
+console.log(`File Name : ${fileURLToPath(import.meta.url)} \n File Path : ${import.meta.url}`);
 
 // console.log(`File Name : ${__filename} \n File Path : ${__dirname}`);
 
@@ -13,7 +14,12 @@ console.log(import.meta.url);
 
 /* 
 * 결과값 *
-File Name : C:\Users\Administrator.User -2023NOYHM\Desktop\hs\react_acadamy\node\node2.mjs 
-File Path : C:\Users\Administrator.User -2023NOYHM\Desktop\hs\react_acadamy\node
+console.log(import.meta.url);
+ㄴ file:///C:/Users/Administrator.User%20-2023NOYHM/Desktop/hs/react_acadamy/node/node2.mjs
+
+import {fileURLToPath} from 'url'; // import : 변수의 다른 표현식
+console.log(`File Name : ${fileURLToPath(import.meta.url)} \n File Path : ${import.meta.url}`);
+ㄴ  File Name : C:\Users\Administrator.User -2023NOYHM\Desktop\hs\react_acadamy\node\node2.mjs 
+    File Path : file:///C:/Users/Administrator.User%20-2023NOYHM/Desktop/hs/react_acadamy/node/node2.mjs
 */
 
