@@ -18,6 +18,18 @@
 //          ex) .load ./file/to/load.js
 // 7. .editor : 편집 모드 - REPL의 다중 입력은 제한적이므로 js파일을 만들어 불러오거나 에디터모드 사용, ctrl + c / ctrl + d로 종료
 
+// ** 주요 내장 객체
+// 1. global : 브라우저의 window와 같은 전역 객체 (require, console 등)
+// 2. console : 주로 디버깅에 사용, 주요 메소드(log, time(label), error(error), table, dir, trace 등)
+// 3. 타이머 : setTimeout, setInterval, setImmediate / clearTimeout, clearInterval, clearimmediate
+// 4. process : 현재 실행되고 있는 노드 프로세스 정보 (.version, .arch, .platform, pid, .env, exit 등)
+
+// ** 자주 사용하는 내장 모듈
+// 1. 노드 내에는 많은 모듈이 내장
+// 2. 
+// 3. 
+// nav - useragent > os.type
+
 // ** filename, dirname ** //
 // 1. __filename : 파일명 출력
 // 2. __dirname : 파일 경로 정보 제공
