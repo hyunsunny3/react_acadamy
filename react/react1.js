@@ -67,4 +67,28 @@
         - https 에서만 구동 가능
         - npm install -g serve
         - serve (-s) build : '-s' 루트 디렉토리로 설정
+
+    * 컴포넌트 만들기 : 파스칼기법(ReactComponent) 
+        - 함수 방식과 클래스 방식 섞어서 사용 가능 단, 데이터 불러오는 방식은 다름
+        1. 함수 방식 컴포넌트
+            function Name(){ return(); }
+            const Name = () => { return(); }
+
+        2. 클래스 방식 컴포넌트
+            import React, {Component} from 'react'; or import {React, Component} from 'react';
+            class Name extends Component { render(){ return(); } }
+
+            여기서 render는 사용자 정의 함수였다
+
+    * props와 state
+        컴포넌트가 바뀐다고해서 브라우저가 인식하지는 못함. 인식하도록 하는 것이 이벤트 이벤트 내용은 함수라고 한다.
+        함수를 만들어야 로드하고 로드됐을 때 이벤트가 동작.
+        - 모듈 : 기능만 있어서 가져다 쓰는
+        - 컴포넌트(사용자 정의 태그) : 태그처럼 가져다 쓰는 
+            element : 일반 적인 html 태그. 내부 property - 속성(attribute)
+            component : 사용자 정의 태그. 내부 property -  props
+
+        props
+        - 같은 컴포넌트여도 다른 내용을 실행 시킬 수 있음
+
 */
