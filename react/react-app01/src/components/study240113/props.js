@@ -27,7 +27,7 @@ function CompProps(props) {
 
 function StudyProps() {
     return (
-        <div className="studyProps">
+        <div className="studyProps wrap">
             <CompProps title="First import" content="First Props Component"></CompProps>
             <CompProps title="Second import" content="Second Props Component"></CompProps>
         </div>
