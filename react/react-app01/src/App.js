@@ -1,11 +1,8 @@
 import './App.css';
 import Gnb from './components/Gnb.js';
-import Layout from './components/study240113/Layout.js'
-import CompType from './components/study240113/CompType.js'
-import StudyProps from './components/study240113/props.js'
-import StudyEvent from './components/study240120/event.js'
-import StudyState01 from './components/study240120/state01.js'
-import StudyState02 from './components/study240120/state02.js'
+import Study240113 from './components/study240113/Study240113.js'
+import Study240120 from './components/study240120/Study240120.js'
+import Study240127 from './components/study240127/Study240127.js'
 
 function App() {
   return (
@@ -13,17 +10,11 @@ function App() {
 
       <Gnb></Gnb>
 
-      <Layout></Layout>
-
-      <CompType></CompType>
-
-      <StudyProps></StudyProps>
+      <Study240113></Study240113>
       
-      <StudyEvent></StudyEvent>
+      <Study240120></Study240120>
 
-      <StudyState01></StudyState01>
-
-      <StudyState02></StudyState02>
+      <Study240127></Study240127>
 
     </div>
   );

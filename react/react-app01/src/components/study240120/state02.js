@@ -9,6 +9,7 @@ function ItemComp(props){
     )
 }
 
+
 function CompState(props) {
     const numbList = props.numbs;
     const printList = [];
