@@ -81,14 +81,38 @@
             여기서 render는 사용자 정의 함수였다
 
     * props와 state
-        컴포넌트가 바뀐다고해서 브라우저가 인식하지는 못함. 인식하도록 하는 것이 이벤트 이벤트 내용은 함수라고 한다.
+        컴포넌트가 바뀐다고해서 브라우저가 인식하지는 못함. 
+        인식하도록 하는 것이 이벤트, 이벤트 내용은 함수라고 한다.
         함수를 만들어야 로드하고 로드됐을 때 이벤트가 동작.
+
         - 모듈 : 기능만 있어서 가져다 쓰는
         - 컴포넌트(사용자 정의 태그) : 태그처럼 가져다 쓰는 
-            element : 일반 적인 html 태그. 내부 property - 속성(attribute)
-            component : 사용자 정의 태그. 내부 property -  props
+            <tag property="value">
+            <element attribute="value">
+            <component props="value">
 
-        props
-        - 같은 컴포넌트여도 다른 내용을 실행 시킬 수 있음
+        * props : 상위 컴포넌트에서 하위 컴포넌트로 값을 전달
+            - 같은 컴포넌트여도 다른 내용을 실행 시킬 수 있음
+            - 값을 전달
+
+        * event : 하위 컴포넌트에서 상위 컴포넌트로 값을 전달
+
+        * state : 앱 내부에서 사용
+            - state [value, newValue]
+            - state를 담을 변수, 첫번째 값 담을 변수, 두번째 값 담을 변수
+
+
+    ** 명령어의 집합 (Hook) **
+    - 클래스 방식이 아닌 함수방식 컴포넌트를 사용하면서 생겨남
+    - 리액트에서 만들어놓은 함수의 집합
+
+        1. 내장 Hook - use로 시작
+            useState
+            useEffect
+
+        2. 사용자 Hook
+
+
+    * useReducer
 
 */

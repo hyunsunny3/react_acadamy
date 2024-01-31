@@ -1,5 +1,7 @@
 // 20231230 NodeJS
 
+/* ** 선생님 폴더 : window+r > \\302-t ** */
+
 /*
     Object.method( param, ... )
     Object.property = "value"
