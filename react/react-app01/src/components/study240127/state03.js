@@ -2,6 +2,7 @@ import { useState } from "react";
 
 
 function StudyState03() {
+    
     const [culc, setCulc] = useState(0);
 
     function culcAdd(){

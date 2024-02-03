@@ -3,3 +3,72 @@
     padding: 10px;
     margin: 10px 0;
 }
+
+.container,
+.container div{
+    border: 5px solid rgb(216, 91, 112);
+    padding: 10px;
+}
+
+.contextWr{
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    margin: 50px auto;
+    border: 3px solid #ccc;
+    padding: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.contextWr .btn{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contextWr .sub{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contextWr .header,
+.contextWr .footer{
+    width: 100%;
+    padding: 15px;
+    color: #000;
+    background: #f8f8f8;
+}
+.contextWr .cont{
+    padding: 15px;
+    flex: 1;
+    color: #000;
+    background: #fff;
+}
+
+.contextWr .dark_mode{
+    background: #232323;
+    color: #fff;
+}
+
+.top-child div{
+    border: 3px solid tomato;
+    padding: 5px
+}
+
+.bottom-child div{
+    border: 3px solid teal;
+    padding: 5px
+}

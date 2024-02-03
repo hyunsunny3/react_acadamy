@@ -113,6 +113,52 @@
         2. 사용자 Hook
 
 
-    * useReducer
+    *** useState 기본 셋 ***
+        function App(){
+            const [sNum, setSnum] = useState(1);
+        }
+        function changeNum(e){
+            setSnum(Number(e.target.value))
+        }
+        return(
+            <div>
+                <input type="text" value={sNum} onChange={changeNum}></input>
+            </div>
+        )
+        
+
+    *** useReducer ***
+
+    1. useState 와 useReducer의 비교
+        1-1. useState
+            const [numb,setNumb] = useState("초기값");
+            function add(){
+                setNumb(numb +1);
+            }
+
+        1-2. useReducer
+            const [numb,dispatchNumb] = useReducer(함수,"초기값");
+            function countReducer(현재값, action){
+                if( action === 'up' ){
+                    현재값 + 1
+                }
+            }
+            function add(){
+                dispatchNumb('up') : 함수호출하여 액션 실행
+            }
+
+            
+        ** 전역 상태관리
+        상태 = 변수
+        변수 > 지역변수 / 전역변수
+        contextAPI Hook
+        useContextAPI
+
+        createContext로 사용할 컨텐츠를 만들고
+        useContext로 사용
+        >   import {createContext} from 'react';
+            const themeCont = createContext();
+            
+
 
 */
