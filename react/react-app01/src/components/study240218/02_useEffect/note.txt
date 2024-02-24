@@ -1,0 +1,17 @@
+
+useEffect( 콜백함수, 배열 )
+
+useEffect ( () => {} )
+- 컴포넌트가 처음 렌더링 될 때 : Mount
+- 컴포넌트가 수정 될 때마다 : Update
+
+useEffect ( () => {}, [ ] )
+- 컴포넌트가 처음 렌더링 될 때 : Mount
+
+useEffect ( () => {}, [ item ] )
+- 컴포넌트가 처음 렌더링 될 때 : Mount
+- item의 값이 변경 될 때마다 : 조건부 Update
+
+useEffect ( () => {
+    return 콜백함수  -- clean up, 컴포넌트가 사라졌을 때(UnMount), 다시 렌더링 되었을 때 useEffect가 시작되기 전
+}, [ item ] )
