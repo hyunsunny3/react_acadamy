@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 
+// useCallback : 함수 자체 저장가능 성능향상에 유리
+
 function App() {
   const [number, setNumber] = useState(1);
   const [toggle, setToggle] = useState(true);
