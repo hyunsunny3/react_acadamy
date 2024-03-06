@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link, NavLink, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
-import Home from "./components/sub/Home";
-import About from "./components/sub/About";
-// import './App.css';
-import RootLayout from "./components/layout/RootLayout";
+import Home from "./Home";
+import About from "./About";
+import './App.css';
+import RootLayout from "./RootLayout";
 
 // 화면을 바꾸는 기술 - 라우팅 routing
 // a : url은 바꾸지만 component는 바꾸지 못함
